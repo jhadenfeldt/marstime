@@ -1,6 +1,6 @@
 {
   "name": "marstime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert timestrings to Mars time (Coordinated Mars Time - MTC & Mars Sol Date - MSD)",
   "main": "dist/build.js",
   "scripts": {
