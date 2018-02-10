@@ -1,6 +1,6 @@
-# marstime
+# marstime [![Build Status](https://travis-ci.org/jhadenfeldt/marstime.svg?branch=master)](https://travis-ci.org/jhadenfeldt/marstime)
 
-> JS library to convert UTC to Mars time
+> JS library to convert UTC to Mars time 
 
 ## Features
 - Convert any UTC time to Mars Sol Date (MSD)
