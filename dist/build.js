@@ -16307,6 +16307,20 @@ var marstime = {
 
 		earthTime = (0, _moment2.default)(earthTime).toDate();
 		return (0, _moment2.default)('2000-01-01 00:00:00').add(_moment2.default.duration(24 * this.getMSD(earthTime) % 24, 'h')).format(format);
+	},
+	getMissionSol: function getMissionSol() {
+		var rover = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'curiosity';
+		var date = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : new Date().getTime();
+
+		rover = rover.toLowerCase();
+
+		if (rover === 'curiosity') {
+			return Math.floor(this.getMSD(date) - this.getMSD('2012-08-05T05:32:00.000Z'));
+		} else if (rover === 'opportunity') {
+			return Math.floor(this.getMSD(date) - this.getMSD('2004-01-23T01:35:00.000Z'));
+		} else {
+			return false;
+		}
 	}
 };
 
