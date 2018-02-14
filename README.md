@@ -28,6 +28,14 @@ marstime.getMTC('2018-02-06T17:57:17.000Z');
 // Get the MTC in any format
 marstime.getMTC('2018-02-06T17:57:17.000Z', 'hh:mm:ss a');
 // '11:29:41 pm'
+
+// Get the mission sol of Opportunity or Curiosity
+marstime.getMissionSol('Opportunity', '2018-02-13T17:57:17.000Z');
+// 4998
+
+// or get the current mission sol
+marstime.getMissionSol('Opportunity');
+
 ```
 
 ## Running the tests
